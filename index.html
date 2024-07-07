@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/radio-main.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/form-main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Зачётная работа по модулю №7 "Понятие доступности"</title>
+</head>
+<body>
+    <header>
+        <div class="BG"></div>
+        <div class="header">
+            <a class="logo" href="#">
+                <img src="./image/logotip.png" alt="Логотип ввиде картинки с текстом РадиоБатн">
+            </a>
+            <nav>
+                <ul class="nav-list">
+                    <li>
+                        <a class="list" href="#">Домой</a>
+                    </li>
+                    <li>
+                        <a class="list" href="#">О нас</a>
+                    </li>
+                    <li>
+                        <a class="list" href="#">Команда</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container bg">
+            <div class="form-panel">
+                <div class="form-group"> 
+                    <input class="input-btn" type="radio" name="theme" id="dark" value="dark" aria-label="Смена цветовой темы формы Profile на тёмную" checked>
+                    <label class="label-radio" for="dark">
+                        <span class="span"></span>
+                        <span class="txt">Dark</span>
+                    </label>
+                    <input class="input-btn" type="radio" name="theme" id="light" value="light" aria-label="Смена цветовой темы формы Profile на светлую">
+                    <label class="label-radio" for="light">
+                        <span class="span"></span>
+                        <span class="txt">Light</span>
+                    </label>
+                    <div class="form-profile">
+                        <h2>Профиль</h2>
+                        <form id="form" class="form" aria-label="Форма заполнения профиля">
+                            <div class="user-profile">
+                                <input type="text" id="name" aria-label="введите имя не менее 3 и не более 15 символов"/>
+                                <label for="name">Имя</label>
+                                <small tabindex="0">Сообщение об ошибке</small>
+                            </div>
+                            <div class="user-profile">
+                                <input type="text" id="Surname" aria-label="введите фамилию не менее 3 и не более 25 символов"/>
+                                <label for="Surname">Фамилия</label>
+                                <small tabindex="0">Сообщение об ошибке</small>
+                            </div>
+                            <div class="user-profile">
+                                <input type="tel" id="phone" name="phone" data-phone-pattern aria-label="введите номер телефона без семёрки"/>
+                                <label for="phone">Телефон</label>
+                                <small tabindex="0">Сообщение об ошибке</small>
+                            </div>
+                            <div class="user-profile">
+                                <input type="text" id="mail" name="mail" aria-label="введите электронный адрес"/>
+                                <label for="mail">E-mail</label>
+                                <small tabindex="0">Сообщение об ошибке</small>
+                            </div>
+                            <div class="user-profile">
+                                <input type="password" id="password" aria-label="введите пароль"/>
+                                <label for="password">Пароль</label>
+                                <small tabindex="0">Сообщение об ошибке</small>
+                            </div>
+                            <button type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <a class="logo" href="#">
+                <img src="./image/logotip.png" alt="Логотип с иконкой и текстом РадиоБатн">
+            </a>
+            <div class="contacts">
+                <p><b>Связаться с нами</b></p>
+                <address aria-label="Телефон для обратной связи">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tel" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg>
+                    <a href="tel:+7 495 221 12 33">+7 495 221 12 33</a>
+                </address>
+                <address aria-label="Электронный адрес для обратной связи">
+                    <svg id="mail" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mail" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                    </svg>
+                    <a href="mailto:fronted_razrab@mail.ru">FrontedRazrab@mail.ru</a>
+                </address>
+                <address aria-label="Юридический адрес">
+                    <div tabindex="0">
+                        <svg id="address" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mailbox" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M9 8.5h2.793l.853.854A.5.5 0 0 0 13 9.5h1a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.5-.5H9v1z"/>
+                        <path d="M12 3H4a4 4 0 0 0-4 4v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7a4 4 0 0 0-4-4zM8 7a3.99 3.99 0 0 0-1.354-3H12a3 3 0 0 1 3 3v6H8V7zm-3.415.157C4.42 7.087 4.218 7 4 7c-.218 0-.42.086-.585.157C3.164 7.264 3 7.334 3 7a1 1 0 0 1 2 0c0 .334-.164.264-.415.157z"/></svg>
+                    111024, Москва, Шоссе Энтузиастов, дом 14</div>
+                </address>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
